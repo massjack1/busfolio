@@ -23,7 +23,7 @@ const AboutSection = () => {
         </div>
         <p>
           Contact us for any photography or videography ideas that you have. We
-          have professionals that stretches all over the world.
+          have professionals all over the world.
         </p>
         <button>Contact Us</button>
         </Description>
