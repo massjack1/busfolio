@@ -8,32 +8,31 @@ import goodtimes from "../img/goodtimes-small.png";
 
 const OurWork = () => {
     return (
-        <Work>
+<Work>
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/ourwork/the-athlete">
                 <img src={athlete} alt="boxer" />
                 </Link>
             </Movie>
             <Movie>
                 <h2>The Racer</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/ourwork/the-racer">
                 <img src={theracer} alt="woman and  the car" />
                 </Link>
             </Movie>
             <Movie>
                 <h2>The Good Times</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/ourwork/good-times">
                 <img src={goodtimes} alt="Couple by the beach" />
                 </Link>
             </Movie>
-        </Work>
-    );
-};
-
+        </Work>     
+        );
+};         
 
 const Work = styled.div`
 min-height: 100vh;

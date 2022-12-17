@@ -4,12 +4,14 @@ import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
 import AboutUs from "./pages/AboutUs";
 import Nav from "./components/Nav";
-import ContactUS from "./pages/ContactUs";
+import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
+import MovieDetail from "./pages/MovieDetail";
 //Router
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle/>
@@ -18,7 +20,8 @@ function App() {
       <Route path="/" exact element={<AboutUs />} />
       <Route path="/aboutus" exact element={<AboutUs />} />
       <Route path="/ourwork" exact element={ <OurWork/>} />
-      <Route path="/contactus" exact element={<ContactUS />} />
+      <Route path="/ourwork/:id" exact element={<MovieDetail />} />
+      <Route path="/contactus" exact element={<ContactUs />} />
       </Routes>
     </div>
   );
