@@ -32,15 +32,19 @@ const StyledNav = styled.nav`
     .link {
         color: white;
         text-decoration: none;
+        font-size: 1rem;
+        font-weight: lighter;
     }
     ul {
         display: flex;
         list-style: none;
     }
-    #Logo {
+    #logo {
         font-size: 1.5rem;
         font-family: "Lobster", cursive;
         font-weight: lighter;
+        color: white;
+        text-decoration: none;
     }
     li {
         padding-left: 10rem;
