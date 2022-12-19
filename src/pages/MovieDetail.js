@@ -13,7 +13,7 @@ const MovieDetail = () => {
         const currentMovie = movies.filter(
             (stateMovie) => stateMovie.url === url.pathname
         );
-        setMovie(currentMovie[0]);
+       if(currentMovie[0]) setMovie(currentMovie[0]);
     }, [movies, url]);
 
 
