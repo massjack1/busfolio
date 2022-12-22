@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <GlobalStyle/>
       <Nav />
-      <AnimatePresence location={location} key={location.path}>
+      <AnimatePresence>
       <Routes>
       <Route path="/" exact element={<AboutUs />} />
       <Route path="/aboutus" exact element={<AboutUs />} />
